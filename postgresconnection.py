@@ -2,7 +2,7 @@
 """
 Created on Tue May 31 21:26:05 2022
 
-@author: HP
+@author: sevdamammadli
 """
 
 from sqlalchemy import create_engine
