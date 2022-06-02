@@ -1,2 +1,2 @@
 # PostgresSql
-Run Postgresql locally and append data
+Run Postgresql locally and Append data using Pandas
