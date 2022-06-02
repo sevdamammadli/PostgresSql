@@ -1,0 +1,20 @@
+docker run -it \
+  -e POSTGRES_USER="root" \
+  -e POSTGRES_PASSWORD="root" \
+  -e POSTGRES_DB="ny_taxi" \
+  -v e:/zoomcamp/data_engineer/week_1_fundamentals/2_docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data  \
+  -p 5432:5432 \
+  postgres:13
+
+
+docker run -it \ 
+ -e POSTGRES_USER="root" \
+ -e POSTGRES_PASSWORD="root" 
+ -e POSTGRES_DB="ny_taxi" \
+ -e PGDATA=/var/lib/postgresql/data/db-files/ \ 
+ -v C://Users//HP//Desktop//data-engineering-zoomcamp//week_1_basics_n_setup//2_docker_sql:/var/lib/postgresql/data:rw \   
+ -p 5432:5432 \
+ postgres:13
+
+
+
