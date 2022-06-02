@@ -1,4 +1,4 @@
-# PostgresSql
+# PostgreSql
 
 
 Running Postgres with Docker
