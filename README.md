@@ -68,7 +68,7 @@ docker start my-container
 Connecting PgAdming With Docker 
 
 ```
-docker create network pgnetwork
+docker network create pgnetwork
 
 ```
 
