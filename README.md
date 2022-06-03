@@ -65,7 +65,7 @@ After shuting down container next time use following command to start it:
 docker start my-container
 ```
 
-Connecting PgAdming With Docker 
+Connecting PgAdming With Postgre 
 
 ```
 docker network create pgnetwork
