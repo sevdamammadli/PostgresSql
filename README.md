@@ -59,4 +59,8 @@ schemaname!='information_schema'
 pd.read_sql(query,con=engine)
 ```
 
+After shuting down container next time use following command to start it:
 
+```
+docker start my-container
+```
