@@ -7,7 +7,6 @@ Created on Tue May 31 21:26:05 2022
 
 from sqlalchemy import create_engine
 import pandas as pd
-import numpy as np
 
 #connect to Postgresql db
 engine = create_engine('postgresql://root:root@localhost:5432/ny_taxi')

@@ -18,3 +18,4 @@ docker run -it \
 
 
 
+winpty docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v /tmp/foo/c/Users/HP/Desktop/Docker/ny_taxi_data_postgre:/var/lib/postgresql/data:rw   -p 5432:5432   postgres:13
