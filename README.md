@@ -64,3 +64,38 @@ After shuting down container next time use following command to start it:
 ```
 docker start my-container
 ```
+
+Connecting PgAdming With Docker 
+
+```
+docker create network pgnetwork
+
+```
+
+Run Postgres
+
+```
+docker run -it \
+  -e POSTGRES_USER="root" \
+  -e POSTGRES_PASSWORD="root" \
+  -e POSTGRES_DB="ny_taxi" \
+  -v path:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  --network=pgnetwork \
+  --name pg_db \
+  postgres:13
+```
+
+Run PgAdmin
+
+```
+
+docker run -it \
+  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="root" \
+  -p 8080:80 \
+  --network=pgnetwork \
+  --name pgadmin-2 \
+  dpage/pgadmin4
+  
+  ```
